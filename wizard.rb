@@ -14,18 +14,13 @@ class Wizard
     "sudo #{words}"
   end
 
-  def rested? #why false true and not true false
-    if @action < 3
-      true
-    else
-      false
-
-
-    # if @action >= 3
-    #   false
-    # else
+  def rested?
+    @action < 3
+    # if @action < 3
     #   true
-    end
+    # else
+    #   false
+    # end
   end
 
   def cast
